@@ -10,6 +10,10 @@ int inputA() {
 }
 
 int inputB() {
+	int b;
+	cout << "Введите число В: ";
+	cin >> b;
+	return b;
 }
 
 int Sum(int A, int B) {

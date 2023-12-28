@@ -2,49 +2,59 @@
 
 using namespace std;
 
-int inputA() {
-	int a;
-	cout << "Введите число А: ";
-	cin >> a;
-	return a;
+bool UserInput(int input)
+{
+	if (input == NULL)
+		return false;
+	return true;
 }
 
-int inputB() {
-	int b;
-	cout << "Введите число B: ";
-	cin >> b;
-	return b;
+bool menuUserInput(int func)
+{
+	if (func < 1 || func > 4)
+		return false;
+	return true;
 }
 
 int Diff(int A, int B) {
-	return (A-B);
+	return (A - B);
 }
 
 int Sum(int A, int B) {
-	int sum = A + B;
-	return sum;
+	return (A + B);
 }
 
 int main()
 {
     setlocale(LC_ALL, "Russian");
-	int function, A = 0, B = 0;
+	int function, A = NULL, B = NULL;
 	while (true)
 	{
-		cout << "1 - Ввести число А\n2 - Ввести число В\n3 - Выполнить операцию сложение\n4 - Выполнить операцию вычитание\n";
+		cout << "\n1 - Ввести число А\n2 - Ввести число В\n3 - Выполнить операцию сложение\n4 - Выполнить операцию вычитание\n";
 		cout << "\nВведите номер функции: ";
 		cin >> function;
+		while (!menuUserInput(function))
+		{
+			cout << "\nВведите номер функции: ";
+			cin >> function;
+		}
 
 		switch (function)
 		{
 			case 1:
 			{
-				A = inputA();
+				while (!UserInput(A)) {
+					cout << "\nВведите число А: ";
+					cin >> A;
+				}
 				break;
 			}
 			case 2:
 			{
-				B = inputB();
+				while (!UserInput(B)) {
+					cout << "\nВведите число B: ";
+					cin >> B;
+				}
 				break;
 			}
 			case 3:

@@ -1,6 +1,2 @@
 ﻿  Volotina_Repository_v3.cpp
-C:\Users\Admin\Documents\ппо лабы\Volotina_Repository_v3\Volotina_Repository_v3.cpp(15): error C4716: Diff: должна возвращать значение
-C:\Users\Admin\Documents\ппо лабы\Volotina_Repository_v3\Volotina_Repository_v3.cpp(6): error C4716: inputA: должна возвращать значение
-C:\Users\Admin\Documents\ппо лабы\Volotina_Repository_v3\Volotina_Repository_v3.cpp(9): error C4716: inputB: должна возвращать значение
-C:\Users\Admin\Documents\ппо лабы\Volotina_Repository_v3\Volotina_Repository_v3.cpp(63): warning C4717: main: рекурсия на всех путях выполнения, функция вызовет переполнение стека
-C:\Users\Admin\Documents\ппо лабы\Volotina_Repository_v3\Volotina_Repository_v3.cpp(12): error C4716: Sum: должна возвращать значение
+  Volotina_Repository_v3.vcxproj -> C:\Users\Admin\Documents\ппо лабы\Volotina_Repository_v3\x64\Debug\Volotina_Repository_v3.exe

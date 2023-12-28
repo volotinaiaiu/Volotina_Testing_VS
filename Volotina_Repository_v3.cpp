@@ -16,11 +16,12 @@ int inputB() {
 	return b;
 }
 
-int Sum(int A, int B) {
-}
-
 int Diff(int A, int B) {
 	return (A-B);
+}
+
+int Sum(int A, int B) {
+	return (A + B);
 }
 
 int main()

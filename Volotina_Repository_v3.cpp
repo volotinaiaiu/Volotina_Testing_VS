@@ -3,6 +3,10 @@
 using namespace std;
 
 int inputA() {
+	int a;
+	cout << "Введите число А: ";
+	cin >> a;
+	return a;
 }
 
 int inputB() {
@@ -18,10 +22,9 @@ int Diff(int A, int B) {
 int main()
 {
     setlocale(LC_ALL, "Russian");
-
-	int function, A, B;
+	int function, A = 0, B = 0;
 	cout << "1 - Ввести число А\n2 - Ввести число В\n3 - Выполнить операцию сложение\n4 - Выполнить операцию вычитание\n";
-	cout << "Введите номер функции:\n";
+	cout << "\nВведите номер функции: ";
 	cin >> function;
 
 	switch (function)
@@ -59,4 +62,6 @@ int main()
 		default:
 			break;
 	}
+
+	main();
 }

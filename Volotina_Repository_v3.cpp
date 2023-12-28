@@ -12,15 +12,16 @@ int Sum(int A, int B) {
 }
 
 int Diff(int A, int B) {
+	return (A-B);
 }
 
 int main()
 {
     setlocale(LC_ALL, "Russian");
 
-	int function, A = 0, B = 0;
+	int function, A, B;
 	cout << "1 - Ввести число А\n2 - Ввести число В\n3 - Выполнить операцию сложение\n4 - Выполнить операцию вычитание\n";
-	cout << "\nВведите номер функции: ";
+	cout << "Введите номер функции:\n";
 	cin >> function;
 
 	switch (function)
@@ -58,6 +59,4 @@ int main()
 		default:
 			break;
 	}
-
-	main();
 }
